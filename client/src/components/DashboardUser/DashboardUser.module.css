@@ -1,8 +1,17 @@
+.title{
+  margin-bottom: 0;
+}
+
+.p{
+  color: white;
+}
+
+
 .conteiner {
-  margin-top: 3rem;
   display: grid;
   place-items: center;
   align-content: center;
+  background: linear-gradient(to right, red, orange);
 }
 
 .div_information {
@@ -22,12 +31,13 @@
 
 .container {
   display: flex;
-  width: 100%;
+  width: 100;
   padding: 10px;
   background: rgb(244, 244, 244);
   z-index: 1;
   position: sticky;
   top: 0px;
+  background-color: rgb(206, 9, 9);
 }
 
 .right {

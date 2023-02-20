@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import {Avatar,CssBaseline,Typography,Container,Grid,Button, TextField} from '@mui/material'
+import img from '../../image/fondo-removebg-preview.png'
 
 import classes from './Login.module.css'
 
 import { NAME_DATA_LOCALSTORAGE } from '../../constants'
+import { Box } from '@mui/system';
 
 
 function Login({login}) {
@@ -35,14 +37,19 @@ function Login({login}) {
   };
 
   return (
-    <Container component="main" maxWidth="xs">
-    <CssBaseline />
+    <Box className={classes.main} >
+      <div className={classes.imgContainer}>
+        <img src={img} alt="kruger" />
+        <h1>Vaccination control</h1>
+      </div>
     <div className={classes.paper}>
+      <div className={classes.conteiner}>
       <Avatar className={classes.avatar}></Avatar>
       <Typography component="h1" variant="h5">
         Sign up
       </Typography>
-      <form className={classes.form} noValidate onSubmit={handleSubmit}>
+      </div>
+      <form className={classes.form} noValidate onSubmit={handleSubmit} >
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <TextField
@@ -84,7 +91,7 @@ function Login({login}) {
         </Button>
       </form>
     </div>
-  </Container>
+  </Box>
   );
 }
 

@@ -1,14 +1,47 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, red, orange);
+}
+
+.imgContainer img{
+    /* display: flex; */
+    margin-left: 15%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+
 .paper {
     margin-top: 8px;
     display: "flex";
     flex-direction: "column";
+    justify-content: center;
     align-items: "center"
   }
 .avatar {
     margin: 8px;
     background-color: blue
 }
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .form {
-    width: 100%;
-    margin-top: 8px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
 }

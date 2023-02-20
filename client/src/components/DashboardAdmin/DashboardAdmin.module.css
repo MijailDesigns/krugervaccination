@@ -1,11 +1,22 @@
   .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 10px;
-    background: rgb(244, 244, 244);
+    background: linear-gradient(to right, red, orange);
+
     z-index: 1;
     position: sticky;
     top: 0px;
+  }
+
+  .title{
+    margin: 0;
+    margin-top: -30px;
+  }
+
+  .container2{
+    display: flex;
   }
   
   .center {

@@ -3,6 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import BasicModal from '../Modal/Modal';
 import style from './DashboardUser.module.css'
+import img from '../../image/fondo-removebg-preview.png'
 
 const DashboardUser = (props) => {
   const user = useSelector(state => state.user)
@@ -10,15 +11,18 @@ const DashboardUser = (props) => {
   return (
     <section id={style['section']} >
       <div className={style.container}>
+        <img src={img} alt="kruger" style={{height: "60px"}} />
         <div className={style.right}>
+          
           <Button
             onClick={props.onLogout}
-            variant='outlined'>Log Out</Button>
+            variant='contained'>Log Out</Button>
         </div>
       </div>
       
       <div className={style.conteiner}>
-        <h1>Current Information</h1>
+        <h1 className={style.title}>Welcome Krugerian </h1>
+        <p className={style.p}>Please, keep your immunization information up to date</p>
         <div className={style.div_information}>
           <h3>{`${user.first_name} ${user.last_name}`}</h3>
           <h3>{`E-Mail: ${user.email}`}</h3>
